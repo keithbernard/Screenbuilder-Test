@@ -1,15 +1,132 @@
 {
   "type": "kendo-ui-mobile",
-  "isNew": true,
+  "views": [
+    {
+      "type": "view",
+      "components": [],
+      "name": "home",
+      "title": "Home",
+      "addToNavigation": true,
+      "icon": "home"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "authentication",
+          "name": "authenticationViewModel",
+          "dataProvider": "defaultProvider",
+          "emailLabel": "Email",
+          "passwordLabel": "Password",
+          "signinLabel": "Sign In",
+          "signinRedirect": "home",
+          "enableRegistration": true,
+          "gotoRegisterLabel": "Register",
+          "registerEmailLabel": "Email",
+          "registerPasswordLabel": "Password",
+          "registerNameLabel": "Name",
+          "registerLabel": "Register",
+          "registerRedirect": "home",
+          "gotoSigninLabel": "Sign In"
+        }
+      ],
+      "name": "authenticationView",
+      "title": "Authentication",
+      "addToNavigation": true,
+      "icon": "contacts"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "list",
+          "name": "dataListViewModel",
+          "dataProvider": "defaultProvider",
+          "collection": "Activities",
+          "iconField": true,
+          "imageField": "Likes",
+          "headerField": "Text",
+          "masterDetails": false,
+          "pullToRefresh": false,
+          "endlessScroll": false
+        }
+      ],
+      "name": "dataListView",
+      "title": "Data List",
+      "addToNavigation": true,
+      "icon": "organize"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "form",
+          "components": [
+            {
+              "type": "field",
+              "name": "email",
+              "title": "Email",
+              "inputType": "email",
+              "placeholder": "example@example.com"
+            },
+            {
+              "type": "field",
+              "name": "username",
+              "title": "Username",
+              "inputType": "text",
+              "placeholder": "johndoe"
+            },
+            {
+              "type": "field",
+              "name": "tel",
+              "title": "Phone",
+              "inputType": "tel",
+              "placeholder": "+123 444 555 666"
+            },
+            {
+              "type": "field",
+              "name": "switch",
+              "title": "Switch",
+              "inputType": "switch"
+            },
+            {
+              "type": "field",
+              "name": "dropdownlist",
+              "title": "Label",
+              "inputType": "dropdownlist"
+            },
+            {
+              "type": "field",
+              "name": "datetime",
+              "title": "Date/time",
+              "inputType": "datetime-local"
+            }
+          ],
+          "name": "formViewModel",
+          "submitButton": "Confirm",
+          "cancelButton": "Cancel"
+        }
+      ],
+      "name": "formView",
+      "title": "Form",
+      "addToNavigation": true,
+      "icon": "bookmarks"
+    }
+  ],
   "dataProviders": [
     {
       "type": "dataProvider",
-      "title": "DefaultProvider",
+      "everliveUrl": "//platform.telerik.com/bs-api/v1/",
       "name": "defaultProvider",
+      "title": "DefaultProvider",
       "source": "everlive",
-      "offlineStorage": true,
       "everliveKey": "dAF5bdOaUBRTSo7u",
-      "everliveUrl": ""
+      "offlineStorage": true
     }
-  ]
+  ],
+  "name": "kendoUiMobileApp",
+  "navigation": "tabstrip",
+  "view": "home",
+  "transition": "slide",
+  "skin": "native"
 }
