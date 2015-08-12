@@ -1,0 +1,48 @@
+{
+  "ProjectName": "ScreenBuilder Test Hybrid",
+  "ProjectGuid": "a1d27e40-9a83-4b17-b8fb-a05e7e037b58",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.ScreenBuilderTestHybrid",
+  "DisplayName": "ScreenBuilder Test Hybrid",
+  "Author": "",
+  "Description": "ScreenBuilder Test Hybrid",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.7.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{f2c7f219-bffd-4ee0-8592-51257885a31c}",
+  "WP8ProductID": "{79eefc90-2ffa-4f64-b90d-982cdafdce39}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.ScreenBuilderTestHybrid",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ],
+  "CorePlugins": [
+    "org.apache.cordova.network-information"
+  ]
+}
